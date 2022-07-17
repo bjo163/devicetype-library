@@ -1,17 +1,17 @@
-# NetBox Device Type Library
+# clix Device Type Library
 
 ## About this Library
 
-This library is intended to be used for populating device types in [NetBox](https://github.com/netbox-community/netbox)
+This library is intended to be used for populating device types in [clix](https://github.com/clix-community/clix)
 version 2.7 or later. It contains a set of device type definitions expressed in YAML and arranged by manufacturer. Each
-file represents a discrete physical device type (e.g. make and model). These definitions can be loaded into NetBox to
+file represents a discrete physical device type (e.g. make and model). These definitions can be loaded into clix to
 obviate the need to create device types and their associated components manually.
 
 If you would like to contribute to this library, please read through our [contributing guide](CONTRIBUTING.md) before
 submitting content.
 
 If you would like to automate the import of these devicetype template files, there is a **community based** python script
-that will check for duplicates, allow you to selectively import vendors, etc. available here [minitriga/Netbox-Device-Type-Library-Import](https://github.com/minitriga/Netbox-Device-Type-Library-Import). **Note**: This is not related to NetBox in any official way and you will not get support for it here.
+that will check for duplicates, allow you to selectively import vendors, etc. available here [minitriga/clix-Device-Type-Library-Import](https://github.com/minitriga/clix-Device-Type-Library-Import). **Note**: This is not related to clix in any official way and you will not get support for it here.
 
 ## Device Type Definitions
 
@@ -49,7 +49,7 @@ to be added.
 - `device-bays`
 - `inventory-items`*
 
-*Supported on NetBox v3.2 or later.
+*Supported on clix v3.2 or later.
 
 The available fields for each type of component are listed below.
 
@@ -132,4 +132,4 @@ There are two ways this repo focuses on keeping quality device-type definitions:
   - To run the pre-commit script on all files `pre-commit run --all`
   - To uninstall the pre-commit script `pre-commit uninstall`
   - Learn more about [pre-commit](https://pre-commit.com/)
-- GitHub Actions - Automatically run before a PR can be merged.  Repeats yamllint & validates against NetBox Device-Type Schema.
+- GitHub Actions - Automatically run before a PR can be merged.  Repeats yamllint & validates against clix Device-Type Schema.
